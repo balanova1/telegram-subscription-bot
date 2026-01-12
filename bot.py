@@ -14,9 +14,11 @@ def start(message):
         member = bot.get_chat_member(CHANNEL, user_id)
 
         if member.status in ["member", "administrator", "creator"]:
-            bot.send_message(
+           with open("guide.pptx.pdf", "rb") as file:
+                bot.send_document(
                 message.chat.id,
-                "✅ Ты подписан! Вот доступ 👇"
+                file,
+            caption="✅ Ты подписан! Вот твой файл 💚"
             )
         else:
             bot.send_message(
