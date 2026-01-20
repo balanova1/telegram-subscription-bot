@@ -18,12 +18,12 @@ def start(message):
                 bot.send_document(
                 message.chat.id,
                 file,
-            caption="✅ Ты подписан! Вот твой файл 💚"
+            caption="Вот твой файл 💚"
             )
         else:
             bot.send_message(
                 message.chat.id,
-                "❌ Подпишись на канал и нажми /start"
+                "❌ Подпишись на канал тут https://t.me/balanova1 и нажми /start"
             )
 
     except:
