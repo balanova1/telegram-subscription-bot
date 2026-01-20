@@ -18,7 +18,7 @@ def start(message):
                 bot.send_document(
                 message.chat.id,
                 file,
-            caption="Вот твой файл 💚"
+            caption="Спасибо за подписку! Вот твой файл❤️"
             )
         else:
             bot.send_message(
